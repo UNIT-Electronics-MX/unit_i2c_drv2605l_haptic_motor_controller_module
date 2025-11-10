@@ -255,6 +255,7 @@ However, portions of the code are based on <a href="https://github.com/wagiminat
 <a href="hardware/../resources/unit_pinout_v_1_0_ue0065_DRV2605.jpg"> <img src="hardware/../resources/unit_pinout_v_1_0_ue0065_DRV2605.jpg" width="500x"><br/>Pinout</a>
 </div>
 <h3 id="pinout-details"><a class="header" href="#pinout-details"><strong>Pinout Details</strong></a></h3>
+<div align=center>
 <div class="table-wrapper"><table><thead><tr><th>Pin Label</th><th>Function</th><th>Notes</th></tr></thead><tbody>
 <tr><td>+3V3</td><td>Power Supply</td><td>3.3V Power Supply</td></tr>
 <tr><td>GND</td><td>Ground</td><td>Common ground reference</td></tr>
@@ -265,14 +266,26 @@ However, portions of the code are based on <a href="https://github.com/wagiminat
 <tr><td>OUT+</td><td>Motor +</td><td>Motor positive output</td></tr>
 </tbody></table>
 </div></div>
-<h2 id="board-dimensions"><a class="header" href="#board-dimensions">Board Dimensions</a></h2>
-<div align="center">
-<div align="center"><a href="hardware/../resources/unit_dimension_v_1_0_ue0065_DRV2605.png"><img src="hardware/../resources/unit_dimension_v_1_0_ue0065_DRV2605.png" style="max-width: 500px; height: auto;" alt="Dimensions"><br/> Dimensions</a></div>
-</div>
+<h2 id="recommended-operating-conditions"><a class="header" href="#recommended-operating-conditions">Recommended Operating Conditions</a></h2>
+<div align=center>
+<div class="table-wrapper"><table><thead><tr><th>Symbol/Rail</th><th>Description</th><th>Min</th><th>Typ</th><th>Max</th><th>Unit</th></tr></thead><tbody>
+<tr><td>V_IN</td><td>Input Voltage</td><td>3</td><td>-</td><td>5.25</td><td>V</td></tr>
+<tr><td>f_PWM</td><td>PWM input frequency (INT Pin)</td><td>10</td><td>-</td><td>250</td><td>kHz</td></tr>
+<tr><td>Z_L</td><td>Load Impedance (V_IN)</td><td>8</td><td>-</td><td>-</td><td>Ω</td></tr>
+<tr><td>V_IL</td><td>Digital low-level input voltage (EN, INT, SDA, SCL)</td><td>-</td><td>-</td><td>0.5</td><td>V</td></tr>
+<tr><td>V_IH</td><td>Digital high-level input voltage (EN, INT, SDA, SCL)</td><td>1.3</td><td>-</td><td>-</td><td>V</td></tr>
+<tr><td>f_LRA</td><td>LRA Frequency Range</td><td>125</td><td>-</td><td>300</td><td>Hz</td></tr>
+<tr><td>I_IL</td><td>Digital low-level input current (EN, INT, SDA, SCL)</td><td>-</td><td>-</td><td>1</td><td>uA</td></tr>
+<tr><td>I_IH</td><td>Digital high-level input Current (EN, INT, SDA, SCL)</td><td>1</td><td>3.0</td><td>3.5</td><td>uA</td></tr>
+<tr><td>f_o(PWM)</td><td>PWM Output Frequency</td><td>19.5</td><td>20.5</td><td>21.5</td><td>kHz</td></tr>
+</tbody></table>
+</div></div>
+<ul>
+<li>For QWIIC compatibility the board <b>must</b> be powered at 3.3V.</li>
+</ul>
 <h2 id="board-topology"><a class="header" href="#board-topology">Board Topology</a></h2>
 <div align="center">
 <div align="center"><a href="hardware/../resources/unit_topology_v_1_0_ue0065_DRV2605.png"><img src="hardware/../resources/unit_topology_v_1_0_ue0065_DRV2605.png" style="max-width: 500px; height: auto;" alt="Topology"><br/> Topology</a></div>
-</div>
 <div class="table-wrapper"><table><thead><tr><th>Ref.</th><th>Description</th></tr></thead><tbody>
 <tr><td>IC1</td><td>DRV2605 Haptic Motor Driver</td></tr>
 <tr><td>L1</td><td>Power On LED</td></tr>
@@ -281,6 +294,10 @@ However, portions of the code are based on <a href="https://github.com/wagiminat
 <tr><td>J3</td><td>Output for haptic motor</td></tr>
 <tr><td>JP1</td><td>Header for Input Signals</td></tr>
 </tbody></table>
+</div></div>
+<h2 id="board-dimensions"><a class="header" href="#board-dimensions">Board Dimensions</a></h2>
+<div align="center">
+<div align="center"><a href="hardware/../resources/unit_dimension_v_1_0_ue0065_DRV2605.png"><img src="hardware/../resources/unit_dimension_v_1_0_ue0065_DRV2605.png" style="max-width: 500px; height: auto;" alt="Dimensions"><br/> Dimensions</a></div>
 </div><div style="break-before: page; page-break-before: always;"></div><h1 id="technical-specifications-1"><a class="header" href="#technical-specifications-1">Technical Specifications</a></h1>
 <ul>
 <li><strong>Interface:</strong> I2C</li>
@@ -292,6 +309,7 @@ However, portions of the code are based on <a href="https://github.com/wagiminat
 <a href="hardware/../resources/unit_pinout_v_1_0_ue0065_DRV2605.jpg"> <img src="hardware/../resources/unit_pinout_v_1_0_ue0065_DRV2605.jpg" width="500x"><br/>Pinout</a>
 </div>
 <h3 id="pinout-details-1"><a class="header" href="#pinout-details-1"><strong>Pinout Details</strong></a></h3>
+<div align=center>
 <div class="table-wrapper"><table><thead><tr><th>Pin Label</th><th>Function</th><th>Notes</th></tr></thead><tbody>
 <tr><td>+3V3</td><td>Power Supply</td><td>3.3V Power Supply</td></tr>
 <tr><td>GND</td><td>Ground</td><td>Common ground reference</td></tr>
@@ -301,13 +319,26 @@ However, portions of the code are based on <a href="https://github.com/wagiminat
 <tr><td>OUT-</td><td>Motor -</td><td>Motor negative output</td></tr>
 <tr><td>OUT+</td><td>Motor +</td><td>Motor positive output</td></tr>
 </tbody></table>
-</div></div><div style="break-before: page; page-break-before: always;"></div><h1 id="board-dimensions-1"><a class="header" href="#board-dimensions-1">Board Dimensions</a></h1>
-<div align="center">
-<div align="center"><a href="hardware/../resources/unit_dimension_v_1_0_ue0065_DRV2605.png"><img src="hardware/../resources/unit_dimension_v_1_0_ue0065_DRV2605.png" style="max-width: 500px; height: auto;" alt="Dimensions"><br/> Dimensions</a></div>
-</div><div style="break-before: page; page-break-before: always;"></div><h1 id="board-topology-1"><a class="header" href="#board-topology-1">Board Topology</a></h1>
+</div></div><div style="break-before: page; page-break-before: always;"></div><h1 id="recommended-operating-conditions-1"><a class="header" href="#recommended-operating-conditions-1">Recommended Operating Conditions</a></h1>
+<div align=center>
+<div class="table-wrapper"><table><thead><tr><th>Symbol/Rail</th><th>Description</th><th>Min</th><th>Typ</th><th>Max</th><th>Unit</th></tr></thead><tbody>
+<tr><td>V_IN</td><td>Input Voltage</td><td>3</td><td>-</td><td>5.25</td><td>V</td></tr>
+<tr><td>f_PWM</td><td>PWM input frequency (INT Pin)</td><td>10</td><td>-</td><td>250</td><td>kHz</td></tr>
+<tr><td>Z_L</td><td>Load Impedance (V_IN)</td><td>8</td><td>-</td><td>-</td><td>Ω</td></tr>
+<tr><td>V_IL</td><td>Digital low-level input voltage (EN, INT, SDA, SCL)</td><td>-</td><td>-</td><td>0.5</td><td>V</td></tr>
+<tr><td>V_IH</td><td>Digital high-level input voltage (EN, INT, SDA, SCL)</td><td>1.3</td><td>-</td><td>-</td><td>V</td></tr>
+<tr><td>f_LRA</td><td>LRA Frequency Range</td><td>125</td><td>-</td><td>300</td><td>Hz</td></tr>
+<tr><td>I_IL</td><td>Digital low-level input current (EN, INT, SDA, SCL)</td><td>-</td><td>-</td><td>1</td><td>uA</td></tr>
+<tr><td>I_IH</td><td>Digital high-level input Current (EN, INT, SDA, SCL)</td><td>1</td><td>3.0</td><td>3.5</td><td>uA</td></tr>
+<tr><td>f_o(PWM)</td><td>PWM Output Frequency</td><td>19.5</td><td>20.5</td><td>21.5</td><td>kHz</td></tr>
+</tbody></table>
+</div></div>
+<ul>
+<li>For QWIIC compatibility the board <b>must</b> be powered at 3.3V.</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="board-topology-1"><a class="header" href="#board-topology-1">Board Topology</a></h1>
 <div align="center">
 <div align="center"><a href="hardware/../resources/unit_topology_v_1_0_ue0065_DRV2605.png"><img src="hardware/../resources/unit_topology_v_1_0_ue0065_DRV2605.png" style="max-width: 500px; height: auto;" alt="Topology"><br/> Topology</a></div>
-</div>
 <div class="table-wrapper"><table><thead><tr><th>Ref.</th><th>Description</th></tr></thead><tbody>
 <tr><td>IC1</td><td>DRV2605 Haptic Motor Driver</td></tr>
 <tr><td>L1</td><td>Power On LED</td></tr>
@@ -316,6 +347,9 @@ However, portions of the code are based on <a href="https://github.com/wagiminat
 <tr><td>J3</td><td>Output for haptic motor</td></tr>
 <tr><td>JP1</td><td>Header for Input Signals</td></tr>
 </tbody></table>
+</div></div><div style="break-before: page; page-break-before: always;"></div><h1 id="board-dimensions-1"><a class="header" href="#board-dimensions-1">Board Dimensions</a></h1>
+<div align="center">
+<div align="center"><a href="hardware/../resources/unit_dimension_v_1_0_ue0065_DRV2605.png"><img src="hardware/../resources/unit_dimension_v_1_0_ue0065_DRV2605.png" style="max-width: 500px; height: auto;" alt="Dimensions"><br/> Dimensions</a></div>
 </div><div style="break-before: page; page-break-before: always;"></div><h1 id="getting-started"><a class="header" href="#getting-started">Getting Started</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="examples"><a class="header" href="#examples">Examples</a></h1>
 <h2 id="arduinoc-examples"><a class="header" href="#arduinoc-examples">Arduino/C++ Examples</a></h2>
