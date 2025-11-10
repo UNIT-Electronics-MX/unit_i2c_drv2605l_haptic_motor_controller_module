@@ -21,6 +21,8 @@
 
 ### **Pinout Details**
 
+<div align=center>
+
 | Pin Label | Function         | Notes                             |
 |-----------|------------------|-----------------------------------|
 | +3V3      | Power Supply     | 3.3V Power Supply                 |
@@ -34,17 +36,31 @@
 
 </div>
 
-## Board Dimensions
+## Recommended Operating Conditions
 
-<div align="center">
-<a href="./resources/unit_dimension_v_1_0_ue0065_DRV2605.png"><img src="./resources/unit_dimension_v_1_0_ue0065_DRV2605.png" width="500px"><br/>Dimensions</a>
+<div align=center>
+
+| Symbol/Rail | Description                                          | Min  | Typ  | Max  | Unit |
+|-------------|------------------------------------------------------|------|------|------|------|
+|   V_IN      | Input Voltage                                        | 3    | -    | 5.25 | V    |
+|   f_PWM     | PWM input frequency (INT Pin)                        | 10   | -    | 250  | kHz  |
+|   Z_L       | Load Impedance (V_IN)                                | 8    | -    | -    | Ω    |
+|   V_IL      | Digital low-level input voltage (EN, INT, SDA, SCL)  | -    | -    | 0.5  | V    |
+|   V_IH      | Digital high-level input voltage (EN, INT, SDA, SCL) | 1.3  | -    | -    | V    |
+|   f_LRA     | LRA Frequency Range                                  | 125  | -    | 300  | Hz   |
+|   I_IL      | Digital low-level input current (EN, INT, SDA, SCL)  | -    | -    | 1    | uA   |
+|   I_IH      | Digital high-level input Current (EN, INT, SDA, SCL) | 1    | 3.0  | 3.5  | uA   |
+|   f_o(PWM)  | PWM Output Frequency                                 | 19.5 | 20.5 | 21.5 | kHz  |
+
 </div>
+
+* For QWIIC compatibility the board <b>must</b> be powered at 3.3V. 
 
 ## Board Topology
 
 <div align="center">
 <a href="./resources/unit_topology_v_1_0_ue0065_DRV2605.png"><img src="./resources/unit_topology_v_1_0_ue0065_DRV2605.png" width="500px"><br/>Topology</a>
-</div>
+
 
 | Ref.  | Description                                                                 |
 |-------|-----------------------------------------------------------------------------|
@@ -54,3 +70,11 @@
 | J2    | 1mm JST Connector compatible with QWIIC and STEMMA QT Connector Jack        |
 | J3    | Output for haptic motor                                                     |
 | JP1   | Header for Input Signals                                                    |
+
+</div>
+
+## Board Dimensions
+
+<div align="center">
+<a href="./resources/unit_dimension_v_1_0_ue0065_DRV2605.png"><img src="./resources/unit_dimension_v_1_0_ue0065_DRV2605.png" width="500px"><br/>Dimensions</a>
+</div>
