@@ -9,9 +9,30 @@
 
 ## Technical Specifications
 
-- **Interface:** I2C 
+- **Interface:** I2C
+- **I2C Address:**  0x5A 
 - **Input Voltage:** 3.3V-5V
-- **Compatible With:** LRA (Linear Resonance Actuator) and ERM (Eccentric Rotating Mass) 
+- **Compatible With:** LRA (Linear Resonance Actuator) and ERM (Eccentric Rotating Mass)
+
+## Recommended Operating Conditions
+
+<div align=center>
+
+| Symbol/Rail | Description                                          | Min  | Typ  | Max  | Unit |
+|-------------|------------------------------------------------------|------|------|------|------|
+|   V_IN      | Input Voltage                                        | 3    | -    | 5.25 | V    |
+|   f_PWM     | PWM input frequency (INT Pin)                        | 10   | -    | 250  | kHz  |
+|   Z_L       | Load Impedance (V_IN)                                | 8    | -    | -    | Ω    |
+|   V_IL      | Digital low-level input voltage (EN, INT, SDA, SCL)  | -    | -    | 0.5  | V    |
+|   V_IH      | Digital high-level input voltage (EN, INT, SDA, SCL) | 1.3  | -    | -    | V    |
+|   f_LRA     | LRA Optimal Frequency Range                          | 125  | -    | 300  | Hz   |
+|   I_IL      | Digital low-level input current (EN, INT, SDA, SCL)  | -    | -    | 1    | uA   |
+|   I_IH      | Digital high-level input Current (EN, INT, SDA, SCL) | 1    | 3.0  | 3.5  | uA   |
+|   f_o(PWM)  | PWM Output Frequency                                 | 19.5 | 20.5 | 21.5 | kHz  |
+
+</div>
+
+* For QWIIC compatibility the board <b>must</b> be powered at 3.3V. 
 
 ## Pinout
 
@@ -35,26 +56,6 @@
 
 
 </div>
-
-## Recommended Operating Conditions
-
-<div align=center>
-
-| Symbol/Rail | Description                                          | Min  | Typ  | Max  | Unit |
-|-------------|------------------------------------------------------|------|------|------|------|
-|   V_IN      | Input Voltage                                        | 3    | -    | 5.25 | V    |
-|   f_PWM     | PWM input frequency (INT Pin)                        | 10   | -    | 250  | kHz  |
-|   Z_L       | Load Impedance (V_IN)                                | 8    | -    | -    | Ω    |
-|   V_IL      | Digital low-level input voltage (EN, INT, SDA, SCL)  | -    | -    | 0.5  | V    |
-|   V_IH      | Digital high-level input voltage (EN, INT, SDA, SCL) | 1.3  | -    | -    | V    |
-|   f_LRA     | LRA Frequency Range                                  | 125  | -    | 300  | Hz   |
-|   I_IL      | Digital low-level input current (EN, INT, SDA, SCL)  | -    | -    | 1    | uA   |
-|   I_IH      | Digital high-level input Current (EN, INT, SDA, SCL) | 1    | 3.0  | 3.5  | uA   |
-|   f_o(PWM)  | PWM Output Frequency                                 | 19.5 | 20.5 | 21.5 | kHz  |
-
-</div>
-
-* For QWIIC compatibility the board <b>must</b> be powered at 3.3V. 
 
 ## Board Topology
 
