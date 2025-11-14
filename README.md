@@ -1,6 +1,5 @@
 # DevLab: I2C DRV2605L Haptic Motor Controller Module
 
-## Introduction
 
 The **DRV2605L Haptic Motor Controller Module** is a compact, easy-to-use board designed to provide high-quality haptic feedback for a wide range of applications. At its core is the DRV2605L IC from Texas Instruments, a highly integrated haptic driver that supports both Linear Resonance Actuators (LRA) and Eccentric Rotating Mass (ERM) motors. This module enables precise and programmable vibration effects, making it ideal for wearables, handheld devices, robotics, and user interface prototyping.
 
@@ -8,6 +7,17 @@ The **DRV2605L Haptic Motor Controller Module** is a compact, easy-to-use board 
 <p align="center">
   <img src="./hardware/resources/unit_top_v_1_0_ue0065_DRV2605.png" width="60%" alt="DRV2605L Module">
 </p>
+
+<div align="center">
+
+### Quick Setup
+
+
+
+[<img src="https://img.shields.io/badge/Product%20Wiki-blue?style=for-the-badge" alt="Product Wiki">](https://unit-electronics-mx.github.io/unit_i2c_drv2605l_haptic_motor_controller_module/)
+[<img src="https://img.shields.io/badge/Datasheet-green?style=for-the-badge" alt="Datasheet">](hardware/unit_datasheet_devlab_i2c_drv2605l_haptic_motor_controller_module.pdf)
+[<img src="https://img.shields.io/badge/Buy%20Now-orange?style=for-the-badge" alt="Buy Now">](https://uelectronics.com/producto/i2c-drv2605l-modulo-controlador-de-motor-haptico-unit-devlab/)
+[<img src="https://img.shields.io/badge/Getting%20Started-purple?style=for-the-badge" alt="Getting Started">](https://unit-electronics-mx.github.io/unit_i2c_drv2605l_haptic_motor_controller_module/software/getting-started.html)
 
 </div>
 
@@ -22,17 +32,6 @@ Key features include:
 
 Whether you are developing tactile feedback for a wearable device, enhancing a gaming controller, or adding intuitive notifications to your project, this module provides a reliable and flexible solution for integrating haptics into your designs.
 
-### Quick Setup
-
-
-<p align="center">
-
-[<img src="https://img.shields.io/badge/Product%20Wiki-blue?style=for-the-badge" alt="Product Wiki">](https://unit-electronics-mx.github.io/unit_i2c_drv2605l_haptic_motor_controller_module/)
-[<img src="https://img.shields.io/badge/Datasheet-green?style=for-the-badge" alt="Datasheet">](hardware/unit_datasheet_devlab_i2c_drv2605l_haptic_motor_controller_module.pdf)
-[<img src="https://img.shields.io/badge/Buy%20Now-orange?style=for-the-badge" alt="Buy Now">](https://uelectronics.com/producto/i2c-drv2605l-modulo-controlador-de-motor-haptico-unit-devlab/)
-[<img src="https://img.shields.io/badge/Getting%20Started-purple?style=for-the-badge" alt="Getting Started">](https://unit-electronics-mx.github.io/unit_i2c_drv2605l_haptic_motor_controller_module/software/getting-started.html)
-
-</div>
 
 
 ## Overview
