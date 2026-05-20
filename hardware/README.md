@@ -76,6 +76,8 @@
 
 ## Board Dimensions
 
+<!-- Trigger update: 2026-05-20 -->
+
 <div align="center">
 <a href="./resources/unit_dimension_v_1_0_ue0065_DRV2605.png"><img src="./resources/unit_dimension_v_1_0_ue0065_DRV2605.png" width="500px"><br/>Dimensions</a>
 </div>
